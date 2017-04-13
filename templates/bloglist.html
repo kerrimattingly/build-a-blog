@@ -3,7 +3,7 @@
 
 <ul>
 {% for b in posts %}
-<li><a href="/blog/{{b.key().id()}}">{{ b.title }}</a></li>
+<li><a href="/blog/{{b.key().id()}}">{{ b.title }}</a><div>{{ b.body }}</div></li>
 {% endfor %}
 </ul>
 

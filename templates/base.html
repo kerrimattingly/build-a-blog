@@ -31,11 +31,21 @@
             input [type=submit] {
                 font-size: 24px;
             }
+            ul {
+                list-style-type: none;
+            }
+            .title {
+                font-weight: bold;
+                font-size: 20px;
+            }
         </style>
     </head>
     <body>
 
+        <div><a href='/blog'>Home</a>    |    <a href='/newpost'>New Post</a></div>
+        <h1>Blog</h1>
         {% block content %}
+
         {% endblock %}
 
     </body>
